@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  /* background: red; */
+}
+
+.disp {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  /* border: 2px solid blue; */
+}
+
+.nav{
+  position: absolute;
+  top:5px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+
+  /* border: 2px solid green; */
+}
+
+.title {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  font-family: 'Yantramanav', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 999;
+  /* border: 2px solid brown; */
+  
+}
+
+.logo {
+  position: relative;
+  top: 20px;
+  width: 200px;
+  height: 40px;
+  margin-left: 80px;
+  /* border: 2px solid red; */
+}
+
+.logo img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+
+}
+.menu{
+    /* border: 2px solid pink; */
+    margin-right: 90px;
+
+}
+
+.menuItem{
+  list-style: none;
+  display:  inline-block;
+  padding: 0px 20px;
+ 
+
+}
+
+.menuItem h2 {
+  font-family: 'Yantramanav', Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.6;
+  color: #fff;
+}
+
+.textIntro{
+  position: relative;
+  top: 60px;
+  left: 10px;
+  height: 90vh;
+  /* display: inline-block; */
+  overflow: hidden;
+  /* align-content:flex-end; */
+
+  /* border: 2px solid rgb(17, 0, 255); */
+}
+
+.heroText{
+  position: absolute;
+  left: -50px;
+  top: 55vh;
+  opacity: .6;
+  color: rgba(0, 0, 0, 0.2); 
+  -webkit-text-stroke: 1px #fff;
+  font-family: 'Poppins';
+  font-weight: 700;
+  /* letter-spacing: -200; */
+  font-size: 40px;
+  transform: rotate(-90deg);
+  
+  /* color: #fff; */
+  /* border: 2px solid green; */
+}
+.subTitle{
+  position: absolute;
+  top: 78vh;
+  left: 240px;
+  opacity: .7;
+  width: 600px;
+  /* font-family: 'Poppins'; */
+  font-weight: 600;
+  font-family: 'Yantramanav', Arial, sans-serif;
+  /* letter-spacing: -200; */
+  font-size: .8vw;
+  color:#fff;
+  /* transform: rotate(-90deg); */
+  /* border: 2px solid red; */
+}
+
+/* WEORK PAGE ITEMS */
+
+
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 400px;
+  height: auto;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
+.grid-item img{
+
+  width: 100%;
+}
