@@ -162,23 +162,51 @@ width: 100%;
 
 .grid-item {
   /* float: left; */
-  justify-self: center;
+  /* justify-self: center; */
   width: 290px;
   margin: 5px 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(67, 120, 151, 0.7);
+  
+  /* ,  */
+  
+}
+.transition-griditem{
+  transition: box-shadow .5s ease, transform .1s  ease-out;
+}
+
+.grid-item:hover{
+  transform:  scale(1.25) ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
 }
 
 .grid-item img {
   display: block;
   max-width: 100%;
+  opacity: .8;
   border-radius: 5px;
-  /* transition: transform .5s ease; */
+  transform: scale(1.25);
+  transition: transform .5s ease, Opacity .2s ease ;
+    /* filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); Firefox 3.5+ */
+  filter: gray; 
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%); Chrome 19+ & Safari 6+
   
 }
 
-.grid-item :hover img {
-
-  /* transform: scale(1.5); */
+.grid-item:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transform: scale(1) ;
+  opacity: 1;
+  /* z-index: 9999; */
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	
 }
+  
+
 
 .is-checked{
   background: red;
